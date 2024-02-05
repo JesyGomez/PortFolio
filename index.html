@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!--MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Jesica</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="image/fotoperfil.png" alt="">
+            </div>
+            <h1>JESICA GOMEZ</h1>
+            <h2>Desarrolladora de Software</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Jesica, </span>una estudiante de Desarrollo de Software. En el año 2023, obtuve mi título
+                de Programadora Java Full Stack a través de la Universidad de La Punta. Actualmente, estoy ampliando mis
+                conocimientos participando en un curso de Spring, que complementa mis habilidades en #java, #html, #css,
+                #javascript, #react, entre otros.
+                Además, estoy cursando Idiomas (Inglés) en la Universidad Nacional del Oeste (UNO) para fortalecer mis
+                habilidades comunicativas. Me considero apasionada por el mundo de la tecnología y cada día busco nuevas
+                oportunidades de aprendizaje en el ámbito de IT. Estoy emocionada por continuar mi viaje en este
+                fascinante campo y seguir desarrollando mis habilidades.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Residencia</strong>
+                            Buenos Aires, Argentina
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            julianycia.m@gmail.com
+                        </li>
+                        <li>
+                            <strong>Perfil</strong>
+                            <span>Estudiante de Desarrollo de Software</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>PELICULAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso java">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>ReactJS</span>
+                        <div class="barra-skill">
+                            <div class="progreso reactjs">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso sql">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Spring Boot</span>
+                        <div class="barra-skill">
+                            <div class="progreso springboot">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Inglés</span>
+                        <div class="barra-skill">
+                            <div class="progreso ingles">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso tequipo">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Colaboración Remota</span>
+                        <div class="barra-skill">
+                            <div class="progreso tremoto">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECCION CV-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Desarrollo de Aplicaciones con Java</h4>
+                        <span class="casa">Universidad de La Punta</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Universidad de La Punta</p>
+                        <p>Av. Universitaria s/n, Ciudad de La Punta CP 5710,
+                        <p>Provincia de San Luis, Argentina, </p>
+                        <p>Mesa de Entrada: </p>
+                        <p>0266 4452000 (int. 6086)</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollo Web con ReactJS</h4>
+                        <span class="casa">Universidad Tecnológica Nacional</span>
+                        <span class="fecha">octubre 2023 - noviembre 2023</span>
+                        <p>UTN</p>
+                        <p>Rectorado</p>
+                        <p>Sarmiento 440 (C1041AAJ)</p>
+                        <p>Buenos Aires, Argentina</p>
+                        <p>+54 11 5371 5600</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Inglés</h4>
+                        <span class="casa">Universidad Nacional del Oeste</span>
+                        <span class="fecha">2023 - presente</span>
+                        <p>UNO</p>
+                        <p>Belgrano 369, San Antonio de Padua (CP1718)</p>
+                        <p>Buenos Aires, Argentina</p>
+                        <p>(0220) 4834150</p>
+                        <p>Av. Dr. Ricardo Balbín 2048-2098, Merlo</p>
+                        <p>Gran Buenos Aires, Argentina</p>
+                        <p>(0220) 482-0799</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Proveedora</h4>
+                        <span class="casa">Editorial La Ley S.A</span>
+                        <span class="fecha">2008-2013</span>
+                        <p>Tipeo, digitalización de libros, vinculación de notas, preparado, pautado, escaneo de
+                            imágenes, procesamiento, lectura tanto de normas provinciales como convenios colectivos de
+                            trabajo y revistas parlamentarias.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Data Entry</h4>
+                        <span class="casa">AyN S.A.</span>
+                        <span class="fecha">2005-2008</span>
+                        <p>Ingreso de datos manualmente, escaneo y digitalización de documentos físicos, tanto libros,
+                            como revistas y demás, corrección de datos ingresados, organización y mantenimiento de la
+                            información.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Asistente Jurídica</h4>
+                        <span class="casa">Dr. Amabile</span>
+                        <span class="fecha">2003-2005</span>
+                        <p>Investigación legal, preparación y gestión de documentos, coordinación de citas y reuniones,
+                            comunicación fluida con clientes, apoyo en procedimientos judiciales, manejo de agenda,
+                            redacción y edición de documentos, cartas documentos, búsqueda de precedentes, manejo de
+                            tecnologías como Lex-Doctor</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION PORTFOLIO-->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="image/fotoscompras.webp" alt="">
+                    <div class="overlay">
+                        <h3>Sistema de Compras</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="image/fotocooperativa.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Cooperativa "El Progreso"</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--SECCION CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--formulario-->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número de Teléfono">
+                    <input type="text" placeholder="Dirección de correo electrónico">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-envelope"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!--Mapa-->
+                <div class="col">
+                    <img src="image/fondo_mapa.jpeg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Buenos Aires, Argentina
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: julianycia@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
