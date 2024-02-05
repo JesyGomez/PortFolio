@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Nanum+Brush+Script&family=Pinyon+Script&family=Work+Sans:ital,wght@0,100;0,400;0,800;1,100;1,200;1,500&display=swap');
 *{
     box-sizing: border-box;
-    font-family: 'Work Sans';
+    font-family:'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
 }
@@ -26,9 +26,9 @@ html{
     padding: 15px 20px;
 }
 .contenedor-header header .logo a{
-    font-family:cursive;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 36px;
-    color:rgb(31, 32, 34);
+    color:rgb(24, 57, 139);
     text-decoration: none;
 }
 .contenedor-header header ul{
@@ -44,7 +44,7 @@ html{
     text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover{
-    color: aqua;
+    color: rgb(0, 106, 255);
 }
 .nav-responsive{
     background-color: rgb(24, 57, 139);
