@@ -26,8 +26,8 @@ html{
     padding: 15px 20px;
 }
 .contenedor-header header .logo a{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 36px;
+    font-family: cursive, 'Courier New', Courier, monospace;
+    font-size: 46px;
     color: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
     text-decoration: none;
 }
@@ -44,11 +44,12 @@ html{
     text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover{
-    color: #817c7c;
+    background:rgb(73, 56, 76);
+    color: rgba(255, 255, 255, 0.8);
 }
 .nav-responsive{
     background-color: rgb(65, 70, 82);
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.8);
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
