@@ -219,11 +219,24 @@ html{
     font-size: 48px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 0;
 }
 .skills .fila{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+.skills .col {
+    width: 48%; /* Ajusta según tus necesidades */
+    margin-bottom: 20px;
+}
+.skills h3{
+    font-size: 38px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 20px 0;
+}
+
 .skills .fila .col{
     width: 50%;
     padding: 0 20px;
@@ -232,6 +245,19 @@ html{
     font-size: 28px;
     font-family: 'Courier New', Courier, monospace;
     margin-bottom: 25px;
+}
+.skills .fila .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 20px; /* Ajusta el margen derecho para separar las habilidades */
+}
+
+.skills .fila .skill img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
 }
 .skills .skill > span{
     font-weight: calc();
