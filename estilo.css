@@ -10,7 +10,7 @@ html{
 }
 /*MENU*/
 .contenedor-header{
-    background:rgb(11, 109, 174);
+    background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
     position: fixed;
     width: 100%;
     top: 0;
@@ -28,7 +28,7 @@ html{
 .contenedor-header header .logo a{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 36px;
-    color:rgb(25, 79, 215);
+    color: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
     text-decoration: none;
 }
 .contenedor-header header ul{
@@ -37,18 +37,18 @@ html{
 }
 .contenedor-header header nav ul li a{
     text-align: none;
-    color: blanchedalmond;
+    color: #0f0e0e;
     margin: 0 15px;
     padding: 3px;
     transition: .5s;
     text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover{
-    color: rgb(0, 106, 255);
+    color: #817c7c;
 }
 .nav-responsive{
-    background-color: rgb(24, 57, 139);
-    color: #fff;
+    background-color: rgb(65, 70, 82);
+    color: #ffffff;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -65,7 +65,7 @@ html{
 }
 .inicio .contenido-banner{
     padding: 20px;
-    background-color: #1e2326;
+    background-color: #1e232628;
     max-width: 350px;
     margin: auto;
     text-align: center;
@@ -73,7 +73,7 @@ html{
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
-    border: 10px solid rgb(11, 109, 174);
+    border: 10px solid rgb(189, 189, 255);
     display: block;
     width: 80%;
     margin: auto;
@@ -105,8 +105,8 @@ html{
     background-color: #1b90cf;
 }
 .sobremi{
-    background-color: #1e2326;
-    color: #fff;
+    background: linear-gradient(to right, rgb(49, 49, 74), rgb(255, 233, 236));
+    color: #161515;
     padding: 50px 20px;
 }
 .sobremi .contenido-seccion{
@@ -207,8 +207,8 @@ html{
 }
 /*SECCION SKILLS*/
 .skills{
-    background-color: #252a2e;
-    color: #fff;
+    background: linear-gradient(to right, rgb(57, 57, 79), rgb(255, 233, 236));
+    color: #0f0e0e;
     padding: 50px 20px;
 }
 .skills .contenido-seccion{
@@ -264,32 +264,31 @@ html{
     display: block;
     margin-bottom: 10px;
 }
-.skills .skill .barra-skill{
-    height: 8px;
-    width: 80%;
-    background-color: #131517;
-    position: relative;
-    margin-bottom: 30px;
+.circulo {
+    width: 80px; /* Tamaño del círculo */
+    height: 80px; /* Tamaño del círculo */
+    border-radius: 50%; /* Hacer el elemento circular */
+    display: flex; /* Establecer el contenedor como flex */
+    align-items: center; /* Centrar verticalmente los elementos */
+    justify-content: center; /* Centrar horizontalmente los elementos */
+    margin-right: 10px; /* Espacio entre los círculos */
 }
-.skills .skill .progreso{
-    background-color: #1b90cf;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 8px;
+
+/* Estilos para cada habilidad */
+.comunicacion { background-color: #5fc7ff; } /* Color para comunicación */
+.tequipo { background-color: #3e5eb6; } /* Color para trabajo en equipo */
+.creatividad { background-color: #4dd0e1; } /* Color para creatividad */
+.dedicacion { background-color: #1995d2; } /* Color para dedicación */
+.tremoto { background-color: #6aa4ec; } /* Color para colaboración remota */
+.ingles { background-color: #30d49d; } /* Color para inglés intermedio */
+
+/* Estilos para el texto dentro del círculo */
+.circulo span {
+    color: rgb(30, 29, 29); /* Color del texto */
+    font-size: 12px; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
 }
-.skills .skill .barra-skill span{
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    background-color: #1b90cf;
-    border-radius: 50px;
-    line-height: 40px;
-    text-align: center;
-    top: -17px;
-    right: -15px;
-    font-size: 14px;
-}
+
 /* Estas clases se agregaran dinamicamente mediante javascript */
 .skills .skill .javascript{
     width: 0%;
@@ -398,8 +397,8 @@ html{
 }
 /*SECCION CV*/
 .curriculum{
-    background-color: #1e2326;
-    color: #fff;
+    background: linear-gradient(to right, rgb(64, 64, 84), rgb(255, 233, 236));
+    color: #0f0f0f;
     padding: 50px 20px;
 }
 .curriculum .contenido-seccion{
@@ -427,15 +426,15 @@ html{
     margin-bottom: 25px;
 }
 .curriculum .fila .izquierda{
-    border-right: 2px solid #252a25;
+    border-right: 2px solid #25272a;
 }
 .curriculum .fila .derecha{
-    border-left: 2px solid #252a25;
+    border-left: 2px solid #25272a;
 }
 .curriculum .fila .item{
     padding: 25px;
     margin-bottom: 30px;
-    background-color: #252a25;
+    background-color: #1a5c82;
     position: relative;
 }
 .curriculum .fila .item h4{
@@ -504,7 +503,7 @@ html{
 }
 /* SECCION PORTFOLIO */
 .portfolio{
-    background-color: #252a25;
+    background: linear-gradient(to right, rgb(52, 52, 55), rgb(260, 233, 236));
     color: #fff;
     padding: 50px 20px;
 }
@@ -576,10 +575,11 @@ html{
 }
 /*SECCION CONTACTO*/
 .contacto{
-    background-image: url(img/contact_bg.png);
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(image/fondo_mapa.jpeg);
     background-color: #1e2326;
     color: #fff;
     padding: 50px 0;
+    margin: 0;
 }
 .contacto .contenido-seccion{
     max-width: 1100px;
@@ -595,7 +595,7 @@ html{
     display: flex;
 }
 .contacto .col{
-    width: 50%;
+    width: 100%;
     padding: 10px;
     position: relative;
 }
@@ -635,9 +635,6 @@ html{
 .contacto button:hover .overlay{
     width: 100%;
 }
-.contacto .col img{
-    width: 100%;
-}
 .contacto .col .info{
     position: absolute;
     top: 40%;
@@ -659,7 +656,7 @@ html{
     margin-right: 20px;
 }
 footer{
-    background-color: #252a25;
+    background: linear-gradient(to right, rgb(43, 43, 45), rgb(73, 56, 76));
     color: #fff;
     padding: 50px 0 30px 0;
     text-align: center;
@@ -686,7 +683,7 @@ footer .arriba{
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #1b90cf;
+    background-color: #25272a;
     color: #fff;
     position: absolute;
     left: 50%;
