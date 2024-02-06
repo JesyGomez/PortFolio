@@ -125,7 +125,7 @@ html{
     margin-bottom: 20px;
 }
 .sobremi .contenido-seccion p span{
-    color: #1b90cf;
+    color: #011776;
     font-weight: bold;
 }
 .sobremi .fila{
@@ -147,13 +147,14 @@ html{
 }
 .sobremi .fila .col ul li strong{
     display: inline-block;
-    color: #1b90cf;
+    color: #011776;
     width: 130px;
 }
 .sobremi .fila .col ul li span{
-    background-color: #1b90cf;
+    background-color: #011776;
+    color: #fff;
     padding: 3px;
-    font-weight: bold;
+    font-weight:lighter;
     border-radius: 5px;
 }
 .sobremi .fila .col .contenedor-intereses{
