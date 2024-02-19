@@ -55,6 +55,20 @@ html{
     cursor: pointer;
     display: none;
 }
+#nav.responsive {
+    display: block;
+    background-color: rgb(189, 189, 255);
+    /* Agregar otros estilos necesarios */
+}
+
+/* Estilos para los elementos de la lista en el menú */
+#nav.responsive ul {
+    /* Agregar estilos de lista, como padding y margin */
+    color: #0f0e0e;
+    margin: 0 15px;
+    padding: 3px;
+}
+
 /*SECCION INICIO*/
 .inicio{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(image/fondo.jpg);
