@@ -22,15 +22,16 @@
                 <ul>
                     <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
                     <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
                     <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
                     <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
+
         </header>
     </div>
 
@@ -71,15 +72,15 @@
                             <li>
                                 <strong>Residencia:</strong> Buenos Aires, Argentina
                             </li>
-                            <li>
+                            <!-- <li>
                                 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jesygomez" target="_blank">Perfil de LinkedIn</a>
-                            </li>
+                            </li> -->
                             <li>
                                 <strong>Perfil:</strong> Estudiante de Desarrollo de Software
                             </li>
                         </ul>
-                        <form method="get" action="CVJesica_Gomez.I.pdf">
-                            <button type="submit" name="download" value="cv_Jesica.Gomez.pdf">
+                        <form method="get" action="image/CV.E.JesicaGomez.pdf">
+                            <button type="submit" name="download" value="image/CV.E.JesicaGomez.pdf">
                                 Descargar CV <i class="fa-solid fa-download"></i>
                                 <span class="overlay"></span>
                             </button>
@@ -101,11 +102,11 @@
     <!-- SECCION SKILLS -->
     <section class="skills" id="skills">
         <div class="contenido-seccion">
-            <h2>Skills</h2>
+            <h2>Habilidades</h2>
             <div class="fila">
                 <!-- Technical Skill -->
                 <div class="col">
-                    <h3>Technical Skills</h3>
+                    <h3>Habilidades Técnicas</h3>
                     <div class="fila">
                     <div class="skill">
                         <img width="48" height="48" src="https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png"
@@ -141,18 +142,42 @@
                     <span>SQL</span>
                 </div>
                 <div class="skill">
-                    <img width="64" height="64" src="https://img.icons8.com/nolan/64/php--v2.png" alt="php--v2"/>
-                    <span>Php</span>
-                </div>
-                <div class="skill">
                     <img width="48" height="48" src="https://img.icons8.com/color/48/git.png" alt="git"/>
                     <span>Git</span>
                 </div>
+                <div class="skill">
+                    <img src="Image/icons8-github-50.png" alt="Logo github">
+                    <span>GitHub</span>
+                  </div>
+                  <div class="skill">
+                    <img width="64" height="64" src="https://img.icons8.com/nolan/64/angularjs.png" alt="angularjs"/>
+                    <span>Angular</span>
+                  </div>
+                  <div class="skill">
+                    <img width="48" height="48" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-typescript-an-open-source-programming-language-developed-and-maintained-by-microsoft-logo-color-tal-revivo.png" alt="external-typescript-an-open-source-programming-language-developed-and-maintained-by-microsoft-logo-color-tal-revivo"/>
+                    <span>Typescript</span>
+                  </div>
+                  <div class="skill">
+                    <img src="Image/icons8-logotipo-de-bootstrap-48.png" alt="Logotipo de Bootstrap">
+                    <span>Bootstrap</span>
+                  </div>
+                  <div class="skill">
+                    <img src="Image/icons8-viento-de-cola-css-48.png" alt="Logotipo de tailwind">
+                    <span>Tailwind</span>
+                  </div>
+                  <div class="skill">
+                    <img src="Image/firebase_logo_icon.png" alt="Logo firebase"/>
+                    <span>Firebase</span>
+                  </div>
+                  <div class="skill">
+                    <img src="Image/Vercel_favicon.svg" alt="Logo vercel">
+                      <span>Vercel</span>
+                  </div>
             </div>
         </div>
             <!-- Professional Skills -->
             <div class="fila">
-                <h3>Professional Skills</h3>
+                <h3>Habilidades Blandas</h3>
                 <ul class="col">
                     <li class="skill">
                         <div class="circulo comunicacion">
@@ -285,19 +310,51 @@
             <h2>PORTFOLIO</h2>
             <div class="galeria">
                 <div class="proyecto">
-                    <img src="image/fotoscompras.webp" alt="">
+                    <img src="image/sistema.compras.jpg" alt="Sistema de Compras con Java">
                     <div class="overlay">
                         <h3>Sistema de Compras</h3>
-                        <p>Fotografía</p>
+                        <p>Aplicación desarrollada en Java</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="image/fotocooperativa.jpeg" alt="">
+                    <img src="image/cooperativa.trabajo.progreso.png" alt="Cooperativa de Trabajo">
                     <div class="overlay">
                         <h3>Cooperativa "El Progreso"</h3>
                         <p>Fotografía</p>
                     </div>
                 </div>
+
+                <div class="proyecto">
+                    <img src="image/tienda.ecommerce.jpg" alt="E-Commerce On.line">
+                    <div class="overlay">
+                        <h3>Tienda On-line</h3>
+                        <p>Aplicación desarrollada con Angular, TS y Tailwind</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="image/presupuesto.api.jpg" alt="Api Presupuesto">
+                    <div class="overlay">
+                        <h3>Presupuesto API</h3>
+                        <p>Aplicación desarrollada con Angular</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="image/login.jpg" alt="Login">
+                    <div class="overlay">
+                        <h3>Login</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="image/lista-tareas.jpg" alt="Lista de Tareas API">
+                    <div class="overlay">
+                        <h3>Lista de Tareas</h3>
+                        <p>Aplicación desarrollada con Angular</p>
+                    </div>
+                </div>
+
             </div>
         </div>
 

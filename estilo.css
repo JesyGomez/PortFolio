@@ -61,6 +61,7 @@ html{
     /* Agregar otros estilos necesarios */
 }
 
+
 /* Estilos para los elementos de la lista en el menú */
 #nav.responsive ul {
     /* Agregar estilos de lista, como padding y margin */
@@ -120,8 +121,8 @@ html{
     background-color: #1b90cf;
 }
 .sobremi{
-    background: linear-gradient(to right, rgb(49, 49, 74), rgb(255, 233, 236));
-    color: #161515;
+    background: linear-gradient(to right, rgb(22, 22, 22), rgb(139, 124, 143));
+    color: whitesmoke;
     padding: 50px 20px;
 }
 .sobremi .contenido-seccion{
@@ -140,7 +141,7 @@ html{
     margin-bottom: 20px;
 }
 .sobremi .contenido-seccion p span{
-    color: #011776;
+    color: #f5f6f7;
     font-weight: bold;
 }
 .sobremi .fila{
@@ -162,11 +163,11 @@ html{
 }
 .sobremi .fila .col ul li strong{
     display: inline-block;
-    color: #011776;
+    color: #f5f6f7;
     width: 130px;
 }
 .sobremi .fila .col ul li span{
-    background-color: #011776;
+    background-color: #0f0f0f;
     color: #fff;
     padding: 3px;
     font-weight:lighter;
@@ -223,7 +224,7 @@ html{
 }
 /*SECCION SKILLS*/
 .skills{
-    background: linear-gradient(to right, rgb(57, 57, 79), rgb(255, 233, 236));
+    background-color: #f5f6f7;
     color: #0f0e0e;
     padding: 50px 20px;
 }
@@ -413,7 +414,7 @@ html{
 }
 /*SECCION CV*/
 .curriculum{
-    background: linear-gradient(to right, rgb(64, 64, 84), rgb(255, 233, 236));
+    background-color: rgb(255, 233, 236);
     color: #0f0f0f;
     padding: 50px 20px;
 }
@@ -450,7 +451,7 @@ html{
 .curriculum .fila .item{
     padding: 25px;
     margin-bottom: 30px;
-    background-color: #1a5c82;
+    background-color: #c2d0d8;
     position: relative;
 }
 .curriculum .fila .item h4{
@@ -465,7 +466,7 @@ html{
 }
 .curriculum .fila .item .fecha{
     display: block;
-    color: #1b90cf;
+    color: #144864;
     margin-bottom: 10px;
 }
 .curriculum .fila .item p{
@@ -519,8 +520,8 @@ html{
 }
 /* SECCION PORTFOLIO */
 .portfolio{
-    background: linear-gradient(to right, rgb(52, 52, 55), rgb(260, 233, 236));
-    color: #fff;
+    background-color: #cfdeed;
+    color: black;
     padding: 50px 20px;
 }
 .portfolio .contenido-seccion{
@@ -552,8 +553,8 @@ html{
 .portfolio .galeria .proyecto .overlay{
     position: absolute;
     top: 0;
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 200px;
     text-align: center;
     background: linear-gradient(rgba(25, 141, 176, 0.8), rgba(25, 141, 176, 0.8));
     display: flex;
@@ -672,8 +673,8 @@ html{
     margin-right: 20px;
 }
 footer{
-    background: linear-gradient(to right, rgb(43, 43, 45), rgb(73, 56, 76));
-    color: #fff;
+    background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+    color: #252a2e;
     padding: 50px 0 30px 0;
     text-align: center;
     position: relative;
@@ -683,10 +684,11 @@ footer .redes{
     margin-bottom: 20px;
 }
 footer .redes a{
-    color: #fff;
+    color: turquoise;
+    background-color: #252a2e;
     display: inline-block;
     text-decoration: none;
-    border: 1px solid #fff;
+    border: 1px solid turquoise;
     border-radius: 100%;
     width: 42px;
     height: 42px;
@@ -695,6 +697,12 @@ footer .redes a{
     font-size: 20px;
     transition: .3s;
 }
+footer .redes a:hover {
+    color: white; /* Cambia el color del icono a azul cuando se hace hover */
+    background-color: turquoise; /* Cambia el fondo a turquesa cuando se hace hover */
+    border-color: blue; /* Cambia el color del borde a azul cuando se hace hover */
+}
+
 footer .arriba{
     display: block;
     width: 50px;
@@ -709,6 +717,12 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+footer .arriba:hover {
+    color: white; /* Cambia el color del icono a azul cuando se hace hover */
+    background-color: turquoise; /* Cambia el fondo a turquesa cuando se hace hover */
+    border-color: blue; /* Cambia el color del borde a azul cuando se hace hover */
+}
+
 /*SECCION RESPONSIVE*/
 @media screen and (max-width:980px){
     nav{
