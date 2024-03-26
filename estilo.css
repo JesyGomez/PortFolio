@@ -10,7 +10,7 @@ html{
 }
 /*MENU*/
 .contenedor-header{
-    background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+    background: #b8c1ec;
     position: fixed;
     width: 100%;
     top: 0;
@@ -26,9 +26,9 @@ html{
     padding: 15px 20px;
 }
 .contenedor-header header .logo a{
-    font-family: cursive, 'Courier New', Courier, monospace;
+    font-family: 'Courgette', cursive;
     font-size: 46px;
-    color: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+    color: rgb(73, 56, 76);
     text-decoration: none;
 }
 .contenedor-header header ul{
@@ -48,8 +48,8 @@ html{
     color: rgba(255, 255, 255, 0.8);
 }
 .nav-responsive{
-    background-color: rgb(65, 70, 82);
-    color: rgba(255, 255, 255, 0.8);
+    background-color: #121629;
+    color: #fffffe;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -57,7 +57,7 @@ html{
 }
 #nav.responsive {
     display: block;
-    background-color: rgb(189, 189, 255);
+    background-color: #b8c1ec;
     /* Agregar otros estilos necesarios */
 }
 
@@ -75,9 +75,10 @@ html{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(image/fondo.jpg);
     background-size: cover;
     height: 100vh;
-    color: #fff;
+    color: #fffffe;
     display: flex;
     align-items: center;
+    height: 100vh;
 }
 .inicio .contenido-banner{
     padding: 20px;
@@ -89,7 +90,7 @@ html{
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
-    border: 10px solid rgb(189, 189, 255);
+    border: 10px solid #b8c1ec;
     display: block;
     width: 80%;
     margin: auto;
@@ -105,10 +106,10 @@ html{
     font-weight: normal;
 }
 .inicio .contenido-banner .redes a{
-    color: #fff;
+    color: #fffffe;
     display: inline-block;
     text-decoration: none;
-    border: 1px solid #fff;
+    border: 1px solid #fffffe;
     border-radius: 100%;
     width: 42px;
     height: 42px;
@@ -118,11 +119,12 @@ html{
     transition: .3s;
 }
 .inicio .contenido-banner .redes a:hover{
-    background-color: #1b90cf;
+    background-color: #b8c1ec;
+    color: #0f0e0e;
 }
 .sobremi{
-    background: linear-gradient(to right, rgb(22, 22, 22), rgb(139, 124, 143));
-    color: whitesmoke;
+    background: linear-gradient(to right, #121629, #8b7c8f);
+    color: #fffffe;
     padding: 50px 20px;
 }
 .sobremi .contenido-seccion{
@@ -215,7 +217,7 @@ html{
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1b90cf;
+    background-color: #121629;
     z-index: -1;
     transition: 1s;
 
@@ -224,8 +226,8 @@ html{
 }
 /*SECCION SKILLS*/
 .skills{
-    background-color: #f5f6f7;
-    color: #0f0e0e;
+    background-color: #cdd4f5;
+    color: #232946;
     padding: 50px 20px;
 }
 .skills .contenido-seccion{
@@ -414,8 +416,8 @@ html{
 }
 /*SECCION CV*/
 .curriculum{
-    background-color: #f5f6f7;
-    color: #0f0f0f;
+    background-color: #121629;
+    color: #fffffe;
     padding: 50px 20px;
 }
 .curriculum .contenido-seccion{
@@ -451,7 +453,7 @@ html{
 .curriculum .fila .item{
     padding: 25px;
     margin-bottom: 30px;
-    background-color: #c2d0d8;
+    background-color:#232946;
     position: relative;
 }
 .curriculum .fila .item h4{
@@ -459,30 +461,30 @@ html{
     margin-bottom: 10px;
 }
 .curriculum .fila .item .casa{
-    color: #1b90cf;
+    color: #b8c1ec;
     font-size: 22px;
     font-weight: bold;
     display: block;
 }
 .curriculum .fila .item .fecha{
     display: block;
-    color: #144864;
+    color: #b8c1ec;
     margin-bottom: 10px;
 }
 .curriculum .fila .item p{
     line-height: 24px;
 }
 .curriculum .fila .izq{
-    border-right: 2px solid #1b90cf;
+    border-right: 2px solid #b8c1ec;
     margin-right: 20px;
 }
 .curriculum .fila .der{
-    border-left: 2px solid #1b90cf;
+    border-left: 2px solid #b8c1ec;
     margin-left: 20px;
 }
 .curriculum .fila .item .conectori{
     height: 2px;
-    background-color: #1b90cf;
+    background-color: #b8c1ec;
     width: 47px;
     position: absolute;
     top: 50%;
@@ -494,14 +496,14 @@ html{
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #1b90cf;
+    background-color: #b8c1ec;
     float: right;
     position: relative;
     bottom: 4px;
 }
 .curriculum .fila .item .conectord{
     height: 2px;
-    background-color: #1b90cf;
+    background-color: #b8c1ec;
     width: 47px;
     position: absolute;
     top: 50%;
@@ -513,7 +515,7 @@ html{
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #1b90cf;
+    background-color: #b8c1ec;
     float: left;
     position: relative;
     bottom: 4px;
@@ -521,7 +523,7 @@ html{
 /* SECCION PORTFOLIO */
 .portfolio{
     background-color: #cfdeed;
-    color: black;
+    color: #232946;
     padding: 50px 20px;
 }
 .portfolio .contenido-seccion{
@@ -594,7 +596,7 @@ html{
 .contacto{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(image/fondo_mapa.jpeg);
     background-color: #1e2326;
-    color: #fff;
+    color: #fffffe;
     padding: 50px 0;
     margin: 0;
 }
@@ -645,12 +647,13 @@ html{
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1b90cf;
+    background-color: #b8c1ec;
     z-index: -1;
     transition: 1s;
 }
 .contacto button:hover .overlay{
     width: 100%;
+    background-color: black;
 }
 .contacto .col .info{
     position: absolute;
@@ -668,13 +671,13 @@ html{
     margin-bottom: 20px;
 }
 .contacto .col .info ul li i{
-    color: #1b90cf;
+    color: #b8c1ec;
     display: inline-block;
     margin-right: 20px;
 }
 footer{
-    background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
-    color: #252a2e;
+    background: linear-gradient(to right, #b8c1ec, #ffeee8);
+    color: #232946;
     padding: 50px 0 30px 0;
     text-align: center;
     position: relative;
@@ -684,11 +687,11 @@ footer .redes{
     margin-bottom: 20px;
 }
 footer .redes a{
-    color: turquoise;
-    background-color: #252a2e;
+    color: #fffffe;
+    background-color: #121629;
     display: inline-block;
     text-decoration: none;
-    border: 1px solid turquoise;
+    border: 1px solid #fffffe;
     border-radius: 100%;
     width: 42px;
     height: 42px;
@@ -698,8 +701,8 @@ footer .redes a{
     transition: .3s;
 }
 footer .redes a:hover {
-    color: white; /* Cambia el color del icono a azul cuando se hace hover */
-    background-color: turquoise; /* Cambia el fondo a turquesa cuando se hace hover */
+    color: black; /* Cambia el color del icono a azul cuando se hace hover */
+    background-color: #b8c1ec; /* Cambia el fondo a turquesa cuando se hace hover */
     border-color: blue; /* Cambia el color del borde a azul cuando se hace hover */
 }
 
@@ -718,8 +721,8 @@ footer .arriba{
     font-size: 18px;
 }
 footer .arriba:hover {
-    color: white; /* Cambia el color del icono a azul cuando se hace hover */
-    background-color: turquoise; /* Cambia el fondo a turquesa cuando se hace hover */
+    color: black; /* Cambia el color del icono a azul cuando se hace hover */
+    background-color: #b8c1ec; /* Cambia el fondo a turquesa cuando se hace hover */
     border-color: blue; /* Cambia el color del borde a azul cuando se hace hover */
 }
 
