@@ -8,6 +8,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 /*MENU*/
 .contenedor-header {
   background: #282727;
@@ -105,6 +106,7 @@ html {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  
 }
 .inicio .contenido-banner h2 {
   background: linear-gradient(90deg,#5fe2ff,#ef7bfe); /* Degradado de izquierda a derecha */
