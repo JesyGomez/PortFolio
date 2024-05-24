@@ -625,8 +625,9 @@ html {
   width: 100%;
   height: 350px;
   display: block;
-  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.35);
   border-radius: 5%;
+  transition: all 0.2s ease;
 }
 .portfolio .galeria .proyecto .overlay {
   position: absolute;
