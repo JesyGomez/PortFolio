@@ -43,14 +43,35 @@ html {
   transition: 0.5s;
   text-decoration: none;
 }
-.contenedor-header header nav ul li a:hover {
-    background: linear-gradient(90deg,#5fe2ff,#ef7bfe); /* Degradado de izquierda a derecha */
+ .contenedor-header header nav ul li a:hover {
+    background: linear-gradient(90deg,#5fe2ff,#ef7bfe); 
     color: #fff;
     border-radius: 20%;
+} 
+nav a:hover{
+    background: linear-gradient(90deg,#5fe2ff,#ef7bfe); 
+
+}
+nav a span{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1;
+border-bottom: 2px solid #5fe2ff; 
+border-radius: 15px;
+transform: scale(0) translateY(50px);
+opacity: 0;
+transition: .5s;
+}
+nav a:hover span{
+  transform: scale(1) translateY(0);
+  opacity: 1;
 }
 .nav-responsive {
   color: #fff;
-  background: linear-gradient(90deg,#5fe2ff,#f2eef2); /* Degradado de izquierda a derecha */
+  background: linear-gradient(90deg,#5fe2ff,#f2eef2); 
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
@@ -58,14 +79,12 @@ html {
 }
 #nav.responsive {
   display: block;
-  background: linear-gradient(90deg,#5fe2ff,#ef7bfe); /* Degradado de izquierda a derecha */
-  /* Agregar otros estilos necesarios */
+  background: linear-gradient(90deg,#5fe2ff,#ef7bfe);
 }
 
 /* Estilos para los elementos de la lista en el menú */
 #nav.responsive ul {
-  /* Agregar estilos de lista, como padding y margin */
-  /* color: #0f0e0e; */
+
   margin: 0 15px;
   padding: 3px;
 }
@@ -135,13 +154,28 @@ html {
   color: #0f0e0e;
   transform: scale(1.2, 1.2);
 }
+
 .sobremi {
-  background: linear-gradient(to right, #121629, #8b7c8f);
+  /* background: linear-gradient(to right, #121629, #8b7c8f);
   color: #fffffe;
-  padding: 50px 20px;
-}
+  padding: 50px 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url('image/bg-1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: animateBg 5s linear infinite;
+  }
+  @keyframes animateBg{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+  }
 .sobremi .contenido-seccion {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: auto;
 }
 .sobremi h2 {
@@ -156,7 +190,7 @@ html {
   margin-bottom: 20px;
 }
 .sobremi .contenido-seccion p span {
-  color: #f5f6f7;
+  color: #0f0f0f;
   font-weight: bold;
 }
 .sobremi .fila {
@@ -178,12 +212,12 @@ html {
 }
 .sobremi .fila .col ul li strong {
   display: inline-block;
-  color: #f5f6f7;
+  color: #0f0f0f;
   width: 130px;
 }
 .sobremi .fila .col ul li span {
   background-color: #0f0f0f;
-  color: #fff;
+  color: #0f0f0f;
   padding: 3px;
   font-weight: lighter;
   border-radius: 5px;
@@ -214,13 +248,13 @@ html {
 .sobremi button {
   cursor: pointer;
   background-color: transparent;
-  border: 2px solid #fff;
+  border: 2px solid #0f0f0f;
   width: fit-content;
   display: block;
   margin: 20px auto;
   padding: 10px 22px;
   font-size: 16px;
-  color: #fff;
+  color: #0f0f0f;
   position: relative;
   z-index: 10;
 }
@@ -230,7 +264,7 @@ html {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #121629;
+  background-color: #1995d2;
   z-index: -1;
   transition: 1s;
 }
@@ -239,7 +273,7 @@ html {
 }
 /*SECCION SKILLS*/
 .skills {
-  background-color: #cdd4f5;
+  /* background-color: #cdd4f5; */
   color: #232946;
   padding: 50px 20px;
 }
@@ -594,9 +628,15 @@ html {
 }
 /* SECCION PORTFOLIO */
 .portfolio {
-    position: relative;
+    /* position: relative;
     width: 100%;
-    padding: 40px 20px;
+    padding: 40px 20px; */
+  background: linear-gradient(to top,rgba(229, 237, 242, 0.8),rgb(210, 229, 240)), url(image/program.jpg) no-repeat;
+   background-size: cover;
+    color: #1e2326;
+    display: flex;
+    align-items: center;
+  
   }
 .portfolio .contenido-seccion {
   max-width: 1100px;
@@ -761,7 +801,7 @@ html {
   margin-right: 20px;
 }
 footer {
-  background: linear-gradient(to right, #b8c1ec, #ffeee8);
+  /* background: linear-gradient(to right, #b8c1ec, #ffeee8); */
   color: #232946;
   padding: 50px 0 30px 0;
   text-align: center;
@@ -837,12 +877,12 @@ footer .arriba:hover {
   }
 }
 @media screen and (max-width: 700px) {
-  .sobremi .fila {
+  /* .sobremi .fila {
     display: block;
   }
   .sobremi .fila .col {
     width: fit-content;
-  }
+  } */
   .skills.fila {
     display: block;
   }
@@ -852,6 +892,10 @@ footer .arriba:hover {
   .skills .fila .col .barra-skill {
     width: 100%;
   }
+
+
+
+  
   .curriculum .fila {
     display: block;
   }
@@ -892,5 +936,87 @@ footer .arriba:hover {
   }
   .contacto .fila .col {
     width: 100%;
+  }
+}
+/* Media Queries para hacer la sección responsive */
+@media (max-width: 1200px) {
+  .sobremi h2 {
+      font-size: 32px;
+  }
+
+  .sobremi .contenido-seccion {
+      padding: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .sobremi h2 {
+      font-size: 28px;
+  }
+
+  .sobremi .contenido-seccion {
+      padding: 15px;
+  }
+
+  .sobremi .col {
+      max-width: 100%;
+  }
+
+  .sobremi .fila {
+      flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .sobremi h2 {
+      font-size: 24px;
+  }
+
+  .sobremi .contenido-seccion {
+      padding: 15px;
+  }
+
+  .sobremi .col {
+      max-width: 100%;
+  }
+
+  .sobremi .fila {
+      flex-direction: column;
+  }
+
+  .sobremi .col ul li strong {
+      width: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sobremi {
+      padding: 10px;
+      height: auto;
+  }
+
+  .sobremi h2 {
+      font-size: 20px;
+  }
+
+  .sobremi .contenido-seccion {
+      padding: 10px;
+  }
+
+  .sobremi .col {
+      max-width: 100%;
+  }
+
+  .sobremi button {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+
+  .sobremi .contenido-seccion p {
+      font-size: 16px;
+  }
+
+  .sobremi .col ul li strong {
+      width: 90px;
   }
 }
