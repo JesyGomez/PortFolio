@@ -596,7 +596,7 @@ html {
 .portfolio {
     position: relative;
     width: 100%;
-    padding: 40px 100px;
+    padding: 40px 20px;
   }
 .portfolio .contenido-seccion {
   max-width: 1100px;
@@ -617,7 +617,7 @@ html {
 .portfolio .galeria .proyecto {
   position: relative;
   max-width: 340px;
-  height: fit-content;
+  flex: 1 1 300px; /* Ajusta el tamaño del proyecto para que se adapte */
   margin: 10px;
   cursor: pointer;
 }
@@ -861,7 +861,7 @@ footer .arriba:hover {
   .curriculum .fila .derecha {
     margin-left: 20px;
   }
-  .portfolio .galeria {
+  /* .portfolio .galeria {
     display: block;
     width: 100%;
   }
@@ -870,7 +870,23 @@ footer .arriba:hover {
   }
   .portfolio .galeria .proyecto img {
     width: 100%;
-  }
+  } */
+  .portfolio {
+    padding: 20px 10px; /* Ajusta el padding para pantallas pequeñas */
+}
+
+.portfolio h2 {
+    font-size: 36px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+}
+
+.portfolio .galeria .proyecto {
+    flex: 1 1 100%; /* Los proyectos ocupan todo el ancho en pantallas pequeñas */
+    max-width: none;
+}
+
+.portfolio .galeria {
+    gap: 10px; /* Reduce el espacio entre los elementos en pantallas pequeñas */
+}
   .contacto .fila {
     display: block;
   }
