@@ -71,3 +71,9 @@ document.getElementById("contacto").addEventListener("submit", (event) => {
     }
   });
   
+  
+document.addEventListener("DOMContentLoaded", function() {
+	var whatsappLink = document.getElementById("whatsapp-link");
+	var phoneNumber = "+5491139219005"; 
+	whatsappLink.href = "https://wa.me/" + phoneNumber;
+  });
