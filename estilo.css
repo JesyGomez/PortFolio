@@ -284,7 +284,7 @@ nav a:hover span{
 }
 
 .skills .contenido-seccion .col {
-  flex: 1;
+  flex:auto;
   min-width: 280px;
   padding: 10px;
 }
