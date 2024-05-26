@@ -272,255 +272,90 @@ nav a:hover span{
   width: 100%;
 }
 /*SECCION SKILLS*/
-.skills {
-  /* background-color: #cdd4f5; */
-  color: #232946;
-  padding: 50px 20px;
-}
 .skills .contenido-seccion {
-  max-width: 1100px;
-  margin: auto;
+  padding: 60px 0;
 }
-/* .skills h3 {
-  font-size: 48px;
-  font-family: "Courier New", Courier, monospace;
-  text-align: center;
-  padding: 40px 0;
-} */
-.skills .fila {
+
+.skills .contenido-seccion .fila {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
 }
-.skills .col {
-  width: 48%; /* Ajusta según tus necesidades */
+
+.skills .contenido-seccion .col {
+  flex: 1;
+  min-width: 280px;
+  padding: 10px;
+}
+
+.skills .contenido-seccion h3 {
+  font-size: 24px;
   margin-bottom: 20px;
-}
-.skills h3 {
-  font-size: 38px;
-  font-family: "Courier New", Courier, monospace;
   text-align: center;
-  padding: 20px 0;
+  color: #333;
 }
 
-.skills .fila .col {
-  width: 50%;
-  padding: 0 20px;
+.skills .contenido-seccion .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px; /* Aumenta el padding para hacer el círculo más grande */
+    background-color: #9bdef6;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    width: 140px; /* Aumenta el ancho para hacer el círculo más grande */
+    height: 140px; /* Aumenta la altura para hacer el círculo más grande */
+    margin-bottom: 20px; /* Agrega un margen inferior para separar las esferas */
+
 }
-.skills .fila .col h3 {
-  font-size: 38px;
-  font-family: "Courier New", Courier, monospace;
-  margin-bottom: 25px;
+
+.skills .contenido-seccion .skill:hover {
+  background-color: #e0e0e0;
 }
-.skills .fila .skill {
+
+.skills .contenido-seccion .skill img {
+  width: 60px;
+  height: 60px;
+}
+
+.skills .contenido-seccion .skill span {
+  font-size: 14px;
+  font-family: "Rubik Dirt", cursive;
+  color: #333;
+  text-align: center;
+}
+.skills .contenido-seccion .circulo {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
-  margin-right: 20px; /* Ajusta el margen derecho para separar las habilidades */
+  justify-content: center;
+  padding: 30px; /* Increased padding for larger circles */
+  background-color: #f9f9f9;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  width: 200px; /* Increased width for larger circles */
+  height: 200px; /* Increased height for larger circles */
 }
 
-.skills .fila .skill img {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 10px;
-}
-.skills .skill > span {
-  font-weight: calc();
-  display: block;
-  margin-bottom: 10px;
-}
-.circulo {
-  width: 80px; /* Tamaño del círculo */
-  height: 80px; /* Tamaño del círculo */
-  border-radius: 50%; /* Hacer el elemento circular */
-  display: flex; /* Establecer el contenedor como flex */
-  align-items: center; /* Centrar verticalmente los elementos */
-  justify-content: center; /* Centrar horizontalmente los elementos */
-  margin-right: 10px; /* Espacio entre los círculos */
+.skills .contenido-seccion .circulo:hover {
+  background-color: #e0e0e0;
 }
 
-/* Estilos para cada habilidad */
-.comunicacion {
-  background-color: #5fc7ff;
-} /* Color para comunicación */
-.tequipo {
-  background-color: #3e5eb6;
-} /* Color para trabajo en equipo */
-.creatividad {
-  background-color: #4dd0e1;
-} /* Color para creatividad */
-.dedicacion {
-  background-color: #1995d2;
-} /* Color para dedicación */
-.tremoto {
-  background-color: #6aa4ec;
-} /* Color para colaboración remota */
-.ingles {
-  background-color: #30d49d;
-} /* Color para inglés intermedio */
-
-/* Estilos para el texto dentro del círculo */
-.circulo span {
-  color: rgb(30, 29, 29); /* Color del texto */
-  font-size: 12px; /* Tamaño de la fuente */
-  font-weight: bold; /* Negrita */
+.skills .contenido-seccion .circulo span {
+  font-size: 26px;
+  color: #333;
+  text-align: center;
 }
 
-/* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript {
-  width: 0%;
-  animation: 2s javascript forwards;
-}
-@keyframes javascript {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 75%;
-  }
-}
-
-.skills .skill .htmlcss {
-  width: 0%;
-  animation: 2s htmlcss forwards;
-}
-@keyframes htmlcss {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 89%;
-  }
-}
-
-.skills .skill .java {
-  width: 0%;
-  animation: 2s java forwards;
-}
-@keyframes java {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-
-.skills .skill .reactjs {
-  width: 0%;
-  animation: 2s reactjs forwards;
-}
-@keyframes reactjs {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 75%;
-  }
-}
-
-.skills .skill .sql {
-  width: 0%;
-  animation: 2s sql forwards;
-}
-@keyframes sql {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-
-.skills .skill .springboot {
-  width: 0%;
-  animation: 2s springboot forwards;
-}
-@keyframes springboot {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 55%;
-  }
-}
-
-.skills .skill .comunicacion {
-  width: 0%;
-  animation: 2s comunicacion forwards;
-}
-@keyframes comunicacion {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
-  }
-}
-.skills .skill .ingles {
-  width: 0%;
-  animation: 2s ingles forwards;
-}
-@keyframes ingles {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-
-.skills .skill .creatividad {
-  width: 0%;
-  animation: 2s creatividad forwards;
-}
-@keyframes creatividad {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-
-.skills .skill .dedicacion {
-  width: 0%;
-  animation: 2s dedicacion forwards;
-}
-@keyframes dedicacion {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
-  }
-}
-
-.skills .skill .tequipo {
-  width: 0%;
-  animation: 2s tequipo forwards;
-}
-@keyframes tequipo {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-.skills .skill .tremoto {
-  width: 0%;
-  animation: 2s tremoto forwards;
-}
-@keyframes tremoto {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
 /*SECCION CV*/
 .curriculum {
   background-color: #121629;
