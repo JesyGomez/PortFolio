@@ -9,90 +9,91 @@ html {
   scroll-behavior: smooth;
 }
 
-/*MENU*/
-.contenedor-header {
-  background: #282727;
-  position: fixed;
-  width: 100%;
+  /*MENU*/
+  .contenedor-header {
+    background: #121629;;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .contenedor-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  }
+  .contenedor-header header .logo img {
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+  }
+  .contenedor-header header ul {
+    display: flex;
+    list-style: none;
+  }
+  .contenedor-header header nav ul li a {
+    text-align: none;
+    color: #ffeee8;
+    margin: 0 15px;
+    padding: 3px;
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  .contenedor-header header nav ul li a:hover {
+      background: linear-gradient(90deg,#5fe2ff,#ef7bfe); 
+      color: #fff;
+      border-radius: 20%;
+  } 
+  nav a:hover{
+      background: linear-gradient(90deg,#5fe2ff,#ef7bfe); 
+
+  }
+  nav a span{
+  position: absolute;
   top: 0;
   left: 0;
-  z-index: 99;
-}
-.contenedor-header header {
-  max-width: 1100px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-}
-.contenedor-header header .logo img {
-  border-radius: 50%;
-  width: 68px;
-  height: 68px;
-}
-.contenedor-header header ul {
-  display: flex;
-  list-style: none;
-}
-.contenedor-header header nav ul li a {
-  text-align: none;
-  color: #ffeee8;
-  margin: 0 15px;
-  padding: 3px;
-  transition: 0.5s;
-  text-decoration: none;
-}
- .contenedor-header header nav ul li a:hover {
-    background: linear-gradient(90deg,#5fe2ff,#ef7bfe); 
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-bottom: 2px solid #5fe2ff; 
+  border-radius: 15px;
+  transform: scale(0) translateY(50px);
+  opacity: 0;
+  transition: .5s;
+  }
+  nav a:hover span{
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  .nav-responsive {
     color: #fff;
-    border-radius: 20%;
-} 
-nav a:hover{
-    background: linear-gradient(90deg,#5fe2ff,#ef7bfe); 
+    background: linear-gradient(90deg,#5fe2ff,#f2eef2); 
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+  }
+  #nav.responsive {
+    display: block;
+    background: linear-gradient(90deg,#5fe2ff,#ef7bfe);
+  }
 
-}
-nav a span{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-z-index: -1;
-border-bottom: 2px solid #5fe2ff; 
-border-radius: 15px;
-transform: scale(0) translateY(50px);
-opacity: 0;
-transition: .5s;
-}
-nav a:hover span{
-  transform: scale(1) translateY(0);
-  opacity: 1;
-}
-.nav-responsive {
-  color: #fff;
-  background: linear-gradient(90deg,#5fe2ff,#f2eef2); 
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  display: none;
-}
-#nav.responsive {
-  display: block;
-  background: linear-gradient(90deg,#5fe2ff,#ef7bfe);
-}
-
-/* Estilos para los elementos de la lista en el menú */
-#nav.responsive ul {
-
-  margin: 0 15px;
+  /* Estilos para los elementos de la lista en el menú */
+  #nav.responsive ul {
+    margin: 0 15px;
   padding: 3px;
 }
 
 /*SECCION INICIO*/
 .inicio {
-  margin-top: 70px;
-  background: linear-gradient(to top,rgba(30, 35, 38, 0.8),rgba(30, 35, 38, 1)), url(image/fondo.jpg);
+  margin-top: 100px;
+  background: 
+    linear-gradient(to top, rgba(12, 16, 29, 0.8), rgba(12, 16, 29, 1)), 
+    url('image/fondo.jpg');
   background-size: cover;
   height: 100vh;
   color: #fffffe;
@@ -463,15 +464,12 @@ nav a:hover span{
 }
 /* SECCION PORTFOLIO */
 .portfolio {
-    /* position: relative;
-    width: 100%;
-    padding: 40px 20px; */
+  padding: 40px 20px;
   background: linear-gradient(to top,rgba(229, 237, 242, 0.8),rgb(210, 229, 240)), url(image/program.jpg) no-repeat;
    background-size: cover;
-    color: #1e2326;
+    /* color: #1e2326; */
     display: flex;
-    align-items: center;
-  
+    align-items: center;  
   }
 .portfolio .contenido-seccion {
   max-width: 1100px;
@@ -498,12 +496,37 @@ nav a:hover span{
 }
 .portfolio .galeria .proyecto img {
   width: 100%;
-  height: 350px;
+  height: 250px;
   display: block;
-  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.35);
-  border-radius: 5%;
+  box-shadow: 0 5px 35px rgba(7, 148, 235, 0.703);
+  border-radius: 10px;
   transition: all 0.2s ease;
 }
+
+.button-container {
+    display: grid;
+    place-items: center; /* Centra horizontal y verticalmente */
+  }
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 30px;
+  background: #121629;
+  color: #f2eef2;
+  border-radius: 30px;
+  transition: all 0.2s ease;
+}
+.btn-info:hover {
+  background: turquoise;
+  color: #333;
+  transform: scale(1.1);
+}
+.btn-info:active {
+  background: turquoise;
+  color: #333;
+  transform: scale(1.1);
+}
+
 .portfolio .galeria .proyecto .overlay {
   position: absolute;
   top: 0;
@@ -541,6 +564,7 @@ nav a:hover span{
 }
 .portfolio .galeria .proyecto .overlay:hover {
   opacity: 1;
+  transform: scale(1.1, 1.1);
 }
 .portfolio .galeria .proyecto .overlay:hover h3 {
   margin-bottom: 0;
@@ -636,8 +660,8 @@ nav a:hover span{
   margin-right: 20px;
 }
 footer {
-  /* background: linear-gradient(to right, #b8c1ec, #ffeee8); */
-  color: #232946;
+  background: linear-gradient(to top, rgba(12, 16, 29, 0.8), rgba(12, 16, 29, 1));
+  color: #f2eef2;
   padding: 50px 0 30px 0;
   text-align: center;
   position: relative;
@@ -647,15 +671,15 @@ footer .redes {
   margin-bottom: 20px;
 }
 footer .redes a {
-  color: #fffffe;
-  background-color: #121629;
+  color: #0d101e;
+  background-color: #f2eef2;
   display: inline-block;
   text-decoration: none;
-  border: 1px solid #fffffe;
+  border: 1px solid #121629;
   border-radius: 100%;
-  width: 42px;
-  height: 42px;
-  line-height: 42px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
   margin: 40px 5px;
   font-size: 20px;
   transition: 0.3s;
@@ -664,7 +688,7 @@ footer .redes a:hover {
   color: black; /* Cambia el color del icono a azul cuando se hace hover */
   background-color: #b8c1ec; /* Cambia el fondo a turquesa cuando se hace hover */
   border-color: blue; /* Cambia el color del borde a azul cuando se hace hover */
-  transform: scale(1.2, 1.2);
+  transform: scale(1.3, 1.3);
 }
 
 footer .arriba {
