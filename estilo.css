@@ -95,11 +95,11 @@ html {
     linear-gradient(to top, rgba(12, 16, 29, 0.8), rgba(12, 16, 29, 1)), 
     url('image/fondo.jpg');
   background-size: cover;
-  height: 100vh;
+  /* height: 100vh; */
   color: #fffffe;
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: 90%;
 }
 .inicio .contenido-banner {
   padding: 20px;
@@ -492,7 +492,7 @@ html {
   cursor: pointer;
 }
 .portfolio .galeria .proyecto img {
-  width: 100%;
+  width: 90%;
   height: 250px;
   display: block;
   box-shadow: 0 5px 35px rgba(7, 148, 235, 0.703);
@@ -543,7 +543,7 @@ html {
 .portfolio .galeria .proyecto .overlay {
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 90%;
   height: 100%;
   text-align: center;
   background: linear-gradient(rgba(25, 141, 176, 0.8), rgba(25, 141, 176, 0.8));
@@ -659,13 +659,10 @@ html {
 footer {
   background: linear-gradient(to top, rgba(12, 16, 29, 0.8), rgba(12, 16, 29, 1));
   color: #f2eef2;
-  padding: 50px 0 30px 0;
+  /* padding: 30px 0 30px 0; */
   text-align: center;
   position: relative;
   width: 100%;
-}
-footer .redes {
-  margin-bottom: 20px;
 }
 footer .redes a {
   color: #0d101e;
