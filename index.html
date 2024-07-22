@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="image/Jesica (3).png" />
         <!-- Animate.css -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <div id="tsparticles"></div>
     <!--MENU ENCABEZADO-->
     <div class="contenedor-header">
         <header>
@@ -302,70 +303,117 @@
         </div>
     </section>
 
-    <!--SECCION PORTFOLIO-->
-    <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
-            <h2 class="animate__animated animate__flip animate__delay-1s">PORTFOLIO</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <img src="image/sistema.compras.jpg" alt="Sistema de Compras con Java">
-                    <div class="overlay">
-                        <h3>Sistema de Compras</h3>
-                        <p>Aplicación desarrollada en Java</p>
+<!-- SECCION PORTFOLIO -->
+<section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        <h2 class="animate__animated animate__flip animate__delay-1s">PORTFOLIO</h2>
+        <div class="galeria">
+            <div class="proyecto">
+                <img src="image/sistema.compras.jpg" alt="Sistema de Compras con Java">
+                <div class="overlay">
+                    <h3>Sistema de Compras</h3>
+                    <p>Aplicación desarrollada en Java</p>
+                    <div class="icon-container">
+                        <a href="https://github.com/JesyGomez/Compras_grupo64" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <!-- <a href="" target="_blank" rel="noopener noreferrer">
+                            <i class="fa fa-laptop"></i>
+                        </a> -->
                     </div>
                 </div>
-                <div class="proyecto">
-                    <img src="image/cooperativa.trabajo.progreso.png" alt="Cooperativa de Trabajo">
-                    <div class="overlay">
-                        <h3>Cooperativa "El Progreso"</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="image/tienda.ecommerce.jpg" alt="E-Commerce On.line">
-                    <div class="overlay">
-                        <h3>Tienda On-line</h3>
-                        <p>Aplicación desarrollada con Angular, TS y Tailwind</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="image/presupuesto.api.jpg" alt="Api Presupuesto">
-                    <div class="overlay">
-                        <h3>Presupuesto API</h3>
-                        <p>Aplicación desarrollada con Angular</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="image/adopcionmascotas.png" alt="Pagina web Adopcion de Mascotas">
-                    <div class="overlay">
-                        <h3>Adopción de Mascotas</h3>
-                        <p>Aplicación desarrollada con Bootstrap, en equipo</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="image/lista-tareas.jpg" alt="Lista de Tareas API">
-                    <div class="overlay">
-                        <h3>Lista de Tareas</h3>
-                        <p>Aplicación desarrollada con Angular</p>
-                    </div>
-                </div>
-
             </div>
-          <div class="button-container">
-            <a
-            href="https://github.com/JesyGomez?tab=repositories"
-            target="_blank"
-            rel="noopener noreferrer">
-            <button type="button" class="btn btn-info">
-              Más Proyectos
-              <i class="fa-solid fa-circle-arrow-right"></i>
-            </button>
-          </a>
-          </div>
+
+            <div class="proyecto">
+                <img src="image/Encriptador2.png" alt="Encriptador de Texto. Alura">
+                <div class="overlay">
+                    <h3>Encriptador de Texto</h3>
+                    <p>Desafio Alura-Oracle</p>
+                    <div class="icon-container">
+                        <a href="https://github.com/JesyGomez/DesafioEncriptador" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://jesygomez.github.io/DesafioEncriptador/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa fa-laptop"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <img src="image/cooperativa.trabajo.progreso.png" alt="Cooperativa de Trabajo">
+                <div class="overlay">
+                    <h3>Cooperativa "El Progreso"</h3>
+                    <p>Desarrollada en HTML, CSS, JS</p>
+                    <div class="icon-container">
+                        <a href="https://github.com/JesyGomez/CooperativaProgreso" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <!-- <a href="" target="_blank" rel="noopener noreferrer">
+                            <i class="fa fa-laptop"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <img src="image/tienda.ecommerce.jpg" alt="E-Commerce On.line">
+                <div class="overlay">
+                    <h3>Tienda On-line</h3>
+                    <p>Aplicación desarrollada con Angular, TS y Tailwind</p>
+                    <div class="icon-container">
+                        <a href="https://github.com/JesyGomez/e.commerce_Angular17" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <!-- <a href="" target="_blank" rel="noopener noreferrer">
+                            <i class="fa fa-laptop"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="proyecto">
+                <img src="image/adopcionmascotas.png" alt="Pagina web Adopcion de Mascotas">
+                <div class="overlay">
+                    <h3>Adopción de Mascotas</h3>
+                    <p>Desarrollada en Flask, con Python, bootstrap, MySQL, en equipo</p>
+                    <div class="icon-container">
+                        <a href="https://github.com/SabrinaCortez/back-Adopcion-Web.git" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://adrianreciomdq.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa fa-laptop"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="image/logo.compu.png" alt="Logo de portfolio en ingles">
+                <div class="overlay">
+                    <h3>Portfolio en Inglés</h3>
+                    <p>Desarrollado en HTML, CSS, JS, Bootstrap</p>
+                    <div class="icon-container">
+                        <a href="https://github.com/JesyGomez/Portfolio-in-English" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://jesygomez.github.io/Portfolio-in-English/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa fa-laptop"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="button-container">
+            <a href="https://github.com/JesyGomez?tab=repositories" target="_blank" rel="noopener noreferrer">
+                <button type="button" class="btn btn-info">
+                    Más Proyectos
+                    <i class="fa-solid fa-circle-arrow-right"></i>
+                </button>
+            </a>
+        </div>
+    </div>
+</section>
 
     </section>
 
@@ -407,7 +455,40 @@
             <p>© 2024 Jesica Gomez</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
     <script src="script.js"></script>
+    <script>
+        ScrollReveal().reveal('.contenido-banner', {
+            origin: 'top',
+            distance: '50px',
+            duration: 1500,
+            reset: true
+        });
+    
+        ScrollReveal().reveal('.fila', {
+            origin: 'bottom',
+            distance: '50px',
+            duration: 1500,
+            reset: true
+        });
+    
+        ScrollReveal().reveal('.col', {
+            origin: 'left',
+            distance: '50px',
+            duration: 1500,
+            reset: true
+        });
+    
+        ScrollReveal().reveal('h1, h2', {
+            origin: 'right',
+            distance: '50px',
+            duration: 1500,
+            reset: true
+        });
+    </script>
+    
 </body>
 
 </html>
