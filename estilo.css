@@ -758,6 +758,9 @@ footer .arriba:hover {
 
 /*SECCION RESPONSIVE*/
 @media screen and (max-width: 980px) {
+  .contenedor-header {
+    width: 92%;
+  }
   nav {
     display: none;
   }
