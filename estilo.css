@@ -85,7 +85,7 @@ html {
   /* Estilos para los elementos de la lista en el menú */
   #nav.responsive ul {
     margin: 0 15px;
-  padding: 3px;
+    padding: 3px;
 }
 
 /*SECCION INICIO*/
@@ -108,6 +108,8 @@ html {
   margin: auto;
   text-align: center;
   border-radius: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .inicio .contenido-banner img {
   margin-top: 40px;
@@ -758,9 +760,6 @@ footer .arriba:hover {
 
 /*SECCION RESPONSIVE*/
 @media screen and (max-width: 980px) {
-  .contenedor-header {
-    width: 92%;
-  }
   nav {
     display: none;
   }
@@ -801,8 +800,6 @@ footer .arriba:hover {
   }
 
 
-
-  
   .curriculum .fila {
     display: block;
   }
