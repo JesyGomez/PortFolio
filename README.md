@@ -33,9 +33,9 @@ Este portfolio nació de la idea de tener un espacio único donde centralizar mi
 ---
 
 ## 🚀 Cómo Visualizar el Proyecto
+A.  https://jesygomez.github.io/PortFolio/
 
-1. Clona este repositorio:
-  https://jesygomez.github.io/PortFolio/
+B. Clona este repositorio:
   
    ```bash
    git clone https://github.com/JesyGomez/PortFolio.git
