@@ -4,7 +4,7 @@
 
 ## 🚀 Vista Previa del Proyecto
 
-Este es mi portfolio personal, una plataforma para mostrar mis habilidades, proyectos y experiencia en el desarrollo Full Stack. Diseñado para ser moderno, responsivo y fácil de navegar, este sitio es una ventana a mi trabajo y una forma sencilla de contactarme.
+Bienvenidos a mi portfolio personal, una plataforma para mostrar mis habilidades, proyectos y experiencia en el desarrollo Full Stack. Diseñado para ser moderno, responsivo y fácil de navegar, este sitio es una ventana a mi trabajo y una forma sencilla de contactarme.
 
 **Puedes ver la demo en vivo aquí:** [https://jesicagomezdesarrolladora.netlify.app](https://[jesicagomezdesarrolladora].netlify.app)
 
