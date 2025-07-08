@@ -1,6 +1,6 @@
-# Portfolio Personal de [Jesica Gomez]
+# Portfolio Personal de Jesica Gomez
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/19034426-48e1-412e-b9ae-37f5b9215283/deploy-status)](https://app.netlify.com/projects/jesicagomezdesarrolladora/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/19034426-48e1-412e-b9ae-37f5b9215283/deploy-status)](https://jesicagomezdesarrolladora.netlify.app)
 
 ## 🚀 Vista Previa del Proyecto
 
