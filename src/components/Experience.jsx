@@ -62,9 +62,17 @@ export default function Experience() {
 
   const experience = [
     {
+      title: "Programadora",
+      company: "Meditec S.R.L.",
+      period: "Septiembre 2025 - Presente",
+      description:
+        "Mantenimiento y evolución del CRM: Java y Spring en backend; Angular 15 con Angular Material, Material Icon y AG Grid en frontend; MySQL como base de datos. Implementación de arquitectura y servicios backend escalables para el manejo de la lógica de negocio del CRM. Integración de librerías y gestión de versiones con Git/GitHub en entorno ágil.",
+      color: "#ec4899", // Tailwind pink-500
+    },
+    {
       title: "Desarrolladora",
       company: "Pet Portal - Polo IT",
-      period: "Marzo-2025 - Presente",
+      period: "Marzo 2025 - Presente",
       description:
         "Trabajo colaborativo en equipo multidisciplinario (front, back, QA, diseño, mentor). Uso de Jira para gestión ágil. Desarrollo con React, Python, Flask, MySQL. Participación activa en todas las fases: desarrollo.",
       color: "#a855f7", // Tailwind purple-500
@@ -108,7 +116,6 @@ export default function Experience() {
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 dark:text-white mb-4">
           Mi <span className="text-purple-600 dark:text-purple-400">Trayectoria</span>
         </h2>
-        {/* Subrayado con gradiente, similar al Header */}
         <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full" />
       </motion.div>
 
@@ -126,7 +133,6 @@ export default function Experience() {
             🎓 Educación
           </motion.h3>
 
-          {/* Línea de tiempo de Educación */}
           <div className="relative border-l-2 border-gray-200 dark:border-gray-700 ml-6">
             {education.map((item, index) => (
               <motion.div
@@ -137,12 +143,10 @@ export default function Experience() {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
               >
-                {/* Marcador de la línea de tiempo */}
                 <div
                   className="absolute left-[-0.65rem] top-1.5 w-4 h-4 rounded-full border-2 border-white dark:border-gray-900 z-10"
                   style={{ backgroundColor: item.color }}
                 />
-                {/* Contenido del ítem de la línea de tiempo */}
                 <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md dark:shadow-xl">
                   <div className="text-sm font-semibold mb-1" style={{ color: item.color }}>
                     {item.period}
@@ -168,7 +172,6 @@ export default function Experience() {
             💼 Experiencia Profesional
           </motion.h3>
 
-          {/* Línea de tiempo de Experiencia Profesional */}
           <div className="relative border-l-2 border-gray-200 dark:border-gray-700 ml-6">
             {experience.map((item, index) => (
               <motion.div
@@ -179,12 +182,10 @@ export default function Experience() {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
               >
-                {/* Marcador de la línea de tiempo */}
                 <div
                   className="absolute left-[-0.65rem] top-1.5 w-4 h-4 rounded-full border-2 border-white dark:border-gray-900 z-10"
                   style={{ backgroundColor: item.color }}
                 />
-                {/* Contenido del ítem de la línea de tiempo */}
                 <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md dark:shadow-xl">
                   <div className="text-sm font-semibold mb-1" style={{ color: item.color }}>
                     {item.period}
