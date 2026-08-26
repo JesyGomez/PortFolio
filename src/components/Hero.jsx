@@ -27,7 +27,7 @@ export default function Hero() {
           transition={{ duration: 1, ease: "easeOut" }}
         >
           <div className="hero-image-wrapper">
-            <img src="image/fotoperfil.png" alt="Jesica Gomez" className="hero-image" />
+            <img src="/image/fotoperfil.png" alt="Jesica Gomez" className="hero-image" />
             <div className="image-glow" />
           </div>
         </motion.div>
@@ -61,7 +61,7 @@ export default function Hero() {
             <a href="https://github.com/JesyGomez" className="social-link github">
               <i className="fab fa-github"></i>
             </a>
-            <a href="mailto:julianycia.m@gmail.com" className="social-link email">
+            <a href="mailto:dev.jesicagomez@gmail.com" className="social-link email">
               <i className="fas fa-envelope"></i>
             </a>
             <a href="https://wa.me/5491139219005" className="social-link whatsapp">
@@ -88,7 +88,7 @@ export default function Hero() {
           </a>
           {/* Botón para descargar el CV */}
           <a
-            href="image/CVJesicaGomez.pdf" // Ruta a tu archivo PDF. Asegúrate de que CVJesicaGomez.pdf esté en la carpeta `public` de tu proyecto.
+            href="/image/Cv_Jesica_Gomez.pdf"
             download="CV_Jesica_Gomez.pdf" // Nombre del archivo cuando se descargue
             className="cta-button secondary"
           >

@@ -12,6 +12,7 @@ export default function Skills() {
       { name: "JWT", icon: "🔑", color: "#b47e14" }, // Nuevo
       { name: "React", icon: "⚛️", color: "#3b82f6" },
       { name: "Angular", icon: "🅰️", color: "#dc2626" },
+      { name: "AG Grid", icon: "📊", color: "#1a73e8" },
       { name: "JavaScript", icon: "🟨", color: "#0891b2" },
       { name: "HTML", icon: "📄", color: "#e34c26" }, // Nuevo
       { name: "CSS", icon: "🎨", color: "#264de4" }, // Nuevo
@@ -26,6 +27,7 @@ export default function Skills() {
       { name: "SweetAlert", icon: "🔔", color: "#22c55e" },
       { name: "Toasty", icon: "🍞", color: "#f97316" },
       { name: "IA", icon: "🤖", color: "#8b5cf6" },
+      { name: "APIs REST", icon: "🔗", color: "#0284c7" },
     ],
     tools: [
       { name: "Git", icon: "📝", color: "#0ea5e9" },
@@ -43,6 +45,7 @@ export default function Skills() {
       { name: "Jira", icon: "📊", color: "#2563eb" },
       { name: "Trello", icon: "🗂️", color: "#3b82f6" },
       { name: "MySQL Workbench", icon: "🗜️", color: "#0284c7" }, // Nuevo
+      { name: "HacknPlan", icon: "📋", color: "#22c55e" },
     ],
     soft: [
       { name: "Liderazgo", icon: "👑", description: "Capacidad para guiar equipos" },

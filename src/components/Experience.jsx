@@ -3,86 +3,72 @@ import { motion } from "framer-motion";
 export default function Experience() {
   const education = [
     {
-      title: "Semana CarreraTech IA",
-      institution: "Alura",
-      period: "2025",
-      description: "Implementación de IA con Java, Spring, editor de código, excel, landing page.",
-      color: "#f59e0b", // Tailwind amber-500
+      title: "Estudios en curso",
+      institution: "Universidad Nacional del Oeste",
+      period: "2023 - Presente",
+      description: "Formación universitaria continua, incluyendo inglés técnico para IT.",
+      color: "#6366f1", // Tailwind indigo-500
     },
     {
-      title: "ReactJs - Ecommerce-Pet",
-      institution: "Talento Tech",
-      period: "2025 - Presente",
-      description: "Tecnologías: HTML, CSS, JS, Bootstrap, SweetAlert.",
-      color: "#ef4444", // Tailwind red-500
-    },
-    {
-      title: "Java, Angular - Ecommerce-Tienda",
-      institution: "Udemy",
-      period: "2024 - Presente",
-      description: "Tecnologías: HTML, CSS, JS, Typescript, Tailwind, Firebase, NoSql, Angular, Git, Github.",
-      color: "#8b5cf6", // Tailwind violet-500
-    },
-    {
-      title: "Java-Spring-Security-Sql-Front",
-      institution: "Alura-Oracle",
-      period: "2024 - Presente",
-      description: "Proyectos: ForumHub, Api Clinica, Librería, etc. Tecnologías: Java 21, Spring Boot, Security, JWT, Mysql, Postman, Postgres, Workbench, Intellij, Insomnia, Swagger, Trello, Git, Github, Vercel.",
+      title: "Java y Spring - Implementación de IA",
+      institution: "Alura Latam - Oracle Next Education",
+      period: "Marzo 2025",
+      description: "Semana Carrera TechAI. Java 21, Spring Boot, Security, JWT, MySQL, NoSQL, PostgreSQL, Postman, Insomnia, Swagger, IntelliJ, Git, GitHub, Vercel.",
       color: "#22c55e", // Tailwind green-500
     },
     {
       title: "Python - Adopción de Mascotas",
       institution: "Codo a Codo 2.0",
       period: "2024",
-      description: "Tecnologías: Python, HTML, CSS, JS, Bootstrap, VSC, Mysql, Flask, PythonAnywhere, Git, Github.",
+      description: "Python, Flask, MySQL, HTML, CSS, JavaScript, Bootstrap, Firebase, PythonAnywhere, Git, GitHub.",
       color: "#3b82f6", // Tailwind blue-500
     },
     {
-      title: "ReactJs - Ecommerce",
+      title: "ReactJS",
       institution: "Universidad Tecnológica Nacional",
-      period: "2024",
-      description: "Tecnologías: HTML, CSS, JS, Bootstrap, VSC, Git, Github, Firebase.",
+      period: "2023 - 2024",
+      description: "HTML, CSS, JavaScript, Bootstrap, Git, GitHub, Firebase.",
       color: "#06b6d4", // Tailwind cyan-600
     },
     {
-      title: "Inglés Intermedio",
-      institution: "Universidad Nacional del Oeste",
-      period: "2023 - Presente",
-      description: "Fortalecimiento de habilidades comunicativas en inglés técnico para IT.",
-      color: "#6366f1", // Tailwind indigo-500
+      title: "Java y AngularJS",
+      institution: "Udemy",
+      period: "Curso",
+      description: "Java, Spring Boot, Spring Security, JWT, MySQL, PostgreSQL, Angular, Angular Material, Tailwind CSS, Postman.",
+      color: "#8b5cf6", // Tailwind violet-500
     },
     {
-      title: "Desarrollo de Aplicaciones Full Stack Java",
+      title: "Full Stack Java",
       institution: "Universidad Nacional de La Punta",
       period: "2021 - 2022",
-      description: "Proyecto: Api para Universidad-Inscripción. Tecnologías: Java8, Mysql, Neatbeans, Github.",
+      description: "Proyecto: API para Universidad-Inscripción. Java 8, MySQL, NetBeans, GitHub.",
       color: "#0ea5e9", // Tailwind sky-500
     },
   ];
 
   const experience = [
     {
-      title: "Programadora",
+      title: "Desarrolladora de Software",
       company: "Meditec S.R.L.",
       period: "Septiembre 2025 - Presente",
       description:
-        "Mantenimiento y evolución del CRM: Java y Spring en backend; Angular 15 con Angular Material, Material Icon y AG Grid en frontend; MySQL como base de datos. Implementación de arquitectura y servicios backend escalables para el manejo de la lógica de negocio del CRM. Integración de librerías y gestión de versiones con Git/GitHub en entorno ágil.",
+        "Mantenimiento y evolución del CRM: Java y Spring en backend; Angular 15 con Angular Material, Material Icon y AG Grid en frontend; MySQL como base de datos. Implementación de arquitectura y servicios backend escalables para el manejo de la lógica de negocio del CRM. Uso de asistentes de IA integrados al IDE para navegar código existente, comprender relaciones entre clases y componentes, proponer cambios y revisar implementaciones. Integración de librerías y gestión de versiones con Git/GitHub, organizando el trabajo en equipo con HacknPlan.",
       color: "#ec4899", // Tailwind pink-500
     },
     {
-      title: "Desarrolladora",
-      company: "Pet Portal - Polo IT",
-      period: "Marzo 2025 - Presente",
+      title: "Desarrolladora Full Stack",
+      company: "Pet Portal - Polo IT (MVP)",
+      period: "Marzo 2025 - Agosto 2025",
       description:
-        "Trabajo colaborativo en equipo multidisciplinario (front, back, QA, diseño, mentor). Uso de Jira para gestión ágil. Desarrollo con React, Python, Flask, MySQL. Participación activa en todas las fases: desarrollo.",
+        "Trabajo colaborativo en equipo multidisciplinario de 8 integrantes (front, back, QA, diseño, mentoría). Desarrollo del MVP con React, Python, Flask, MySQL, Toastify y SweetAlert2. Gestión ágil del proyecto con Jira, con participación activa en todas las fases del desarrollo.",
       color: "#a855f7", // Tailwind purple-500
     },
     {
       title: "Data Entry",
       company: "La Ley S.A.",
-      period: "2008-2013",
+      period: "2004 - 2014",
       description:
-        "Gestión y procesamiento de textos legales y administrativos, asegurando precisión y calidad en la información. Manejo de escaneo, lectura, corrección y digitalización de documentos, aplicando atención al detalle y manejo de grandes volúmenes de información. Coordinación con diferentes áreas para garantizar la correcta circulación y actualización de documentos. Adaptación rápida a tecnologías propias y a flujos de trabajo exigentes en un entorno legal.",
+        "Procesamiento, corrección y digitalización de textos legales y administrativos en grandes volúmenes, con foco en la precisión y la calidad de la información. Coordinación con distintas áreas para la correcta circulación y actualización de los documentos.",
       color: "#0891b2", // Tailwind cyan-700
     },
     {

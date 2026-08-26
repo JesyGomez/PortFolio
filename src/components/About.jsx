@@ -7,7 +7,7 @@ export default function About() {
   const tabs = [
     {
       title: "Mi Historia",
-      content: `Soy Jesica, una desarrolladora apasionada con experiencia en proyectos web y full-stack. Mi viaje en el desarrollo de software comenzó en 2021. Cuento con antecedentes en gestión y procesamiento de documentos en La Ley S.A. y actualmente formo parte del proyecto Acelerador Polo IT, trabajando en equipo con tecnologías como React, Python, Flask y MySQL. Estoy comprometida con el aprendizaje continuo y la creación de soluciones innovadoras.`,
+      content: `Soy Jesica, desarrolladora de software con experiencia en desarrollo web y full-stack sobre Java, Spring Boot, Angular y MySQL. Actualmente trabajo en Meditec S.R.L. manteniendo y evolucionando su CRM corporativo, implementando servicios backend escalables y funcionalidades en frontend. Antes participé en el proyecto acelerador Polo IT, desarrollando el MVP de Pet Portal con React, Python, Flask y MySQL. Cuento además con antecedentes en gestión y procesamiento de documentos en La Ley S.A. Incorporo asistentes de IA integrados al entorno de desarrollo a mi trabajo diario para navegar bases de código existentes, analizar relaciones entre clases y componentes, proponer cambios y revisar implementaciones.`,
     },
     {
       title: "Filosofía",
@@ -15,7 +15,7 @@ export default function About() {
     },
     {
       title: "Objetivos",
-      content: `Mi meta es convertirme en una desarrolladora full-stack completa, especializada en tecnologías modernas como Java, React y Spring Boot. Aspiro a liderar proyectos que marquen la diferencia y contribuir al crecimiento de equipos de desarrollo de alto rendimiento.`,
+      content: `Mi meta es consolidarme como desarrolladora full-stack, especializada en Java, Spring Boot y Angular, incorporando cada vez más herramientas de IA aplicada al desarrollo. Aspiro a liderar proyectos que marquen la diferencia y contribuir al crecimiento de equipos de desarrollo de alto rendimiento.`,
     },
   ];
 
@@ -47,7 +47,7 @@ export default function About() {
         >
           <div className="relative w-72 h-72 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-xl dark:shadow-2xl">
             {/* Si tienes una imagen real, reemplaza este src */}
-            <img src="image/LogoInicial.png?height=400&width=400" alt="Jesica trabajando" className="w-full h-full object-cover" />
+            <img src="/image/LogoInicial.png" alt="Jesica trabajando" className="w-full h-full object-cover" />
             {/* Marco decorativo */}
             <div className="absolute inset-0 border-4 border-purple-500 dark:border-pink-500 rounded-full transform translate-x-4 translate-y-4 -z-10" />
           </div>
@@ -55,8 +55,8 @@ export default function About() {
           {/* Contenedor de Estadísticas */}
           <div className="flex justify-around items-center w-full max-w-sm sm:max-w-md bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md dark:shadow-xl mt-4">
             <div className="text-center">
-              <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">3+</div>
-              <div className="text-sm text-gray-600 dark:text-gray-300">Años Estudiando</div>
+              <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">5+</div>
+              <div className="text-sm text-gray-600 dark:text-gray-300">Años Desarrollando</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">15+</div>
