@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
+const IMG_BASE = `${import.meta.env.BASE_URL}image/`;
+
 export default function Portfolio() {
   const [filter, setFilter] = useState("all");
   const [selectedProject, setSelectedProject] = useState(null);
@@ -13,7 +15,7 @@ export default function Portfolio() {
         "Mantenimiento y evolución de un CRM corporativo en un entorno de trabajo profesional",
       longDescription:
         "Trabajo actual en el mantenimiento y la evolución del CRM corporativo de Meditec S.R.L., implementando servicios backend escalables y funcionalidades de frontend. Por confidencialidad no se comparten detalles del negocio ni el código fuente, solo las tecnologías involucradas.",
-      image: "/image/crm-corporativo-meditec.jpg",
+      image: `${IMG_BASE}crm-corporativo-meditec.jpg`,
       category: "fullstack",
       technologies: [
         "Java",
@@ -36,7 +38,7 @@ export default function Portfolio() {
       title: "Portal de Mascotas (Polo IT)",
       longDescription:
         "Desarrollo de una aplicación web para la gestión y adopción de mascotas, parte del proyecto Acelerador Polo IT.",
-      image: "/image/portalMascotas.png",
+      image: `${IMG_BASE}portalMascotas.png`,
       category: "fullstack",
       technologies: [
         "React",
@@ -59,7 +61,7 @@ export default function Portfolio() {
       title: "E-commerce Tienda Mascotas",
       longDescription:
         "Implementación de una tienda en línea completa para productos de mascotas, desde el frontend hasta la gestión de datos.",
-      image: "/image/TiendaMascota.png",
+      image: `${IMG_BASE}TiendaMascota.png`,
       category: "frontend",
       technologies: [
         "HTML",
@@ -83,7 +85,7 @@ export default function Portfolio() {
       title: "AG's Nails",
       longDescription:
         "Desarrollo de una página web para un negocio de estética de uñas.",
-      image: "/image/AgNails.png",
+      image: `${IMG_BASE}AgNails.png`,
       category: "frontend",
       technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Netlify"],
       github: "https://github.com/JesyGomez/ManicuraAGNails.git",
@@ -99,7 +101,7 @@ export default function Portfolio() {
         "Aplicación completa para gestión de compras con Java y Spring Boot",
       longDescription:
         "Sistema robusto desarrollado en Java que permite a las empresas gestionar todo su proceso de compras, desde la solicitud hasta la facturación. Incluye autenticación, roles de usuario, reportes y dashboard administrativo.",
-      image: "/image/sistema.compras.jpg",
+      image: `${IMG_BASE}sistema.compras.jpg`,
       category: "backend",
       technologies: ["Java", "Spring Boot", "MySQL", "Thymeleaf"],
       github: "https://github.com/JesyGomez/Compras_grupo64",
@@ -113,7 +115,7 @@ export default function Portfolio() {
       description: "API REST segura para gestión de clínicas con JWT",
       longDescription:
         "API REST desarrollada con Spring Boot que maneja la gestión completa de una clínica médica. Incluye autenticación JWT, gestión de pacientes, médicos, citas y historiales médicos con alta seguridad.",
-      image: "/image/FotoClinica.jpg",
+      image: `${IMG_BASE}FotoClinica.jpg`,
       category: "backend",
       technologies: [
         "Java 21",
@@ -133,7 +135,7 @@ export default function Portfolio() {
       description: "Tienda online con Angular y diseño responsive",
       longDescription:
         "Aplicación de comercio electrónico moderna desarrollada con Angular 17 y Tailwind CSS. Incluye carrito de compras, filtros avanzados, sistema de pagos y panel administrativo.",
-      image: "/image/tienda.ecommerce.jpg",
+      image: `${IMG_BASE}tienda.ecommerce.jpg`,
       category: "frontend",
       technologies: ["Angular", "TypeScript", "Tailwind CSS", "RxJS"],
       github: "https://github.com/JesyGomez/e.commerce_Angular17",
@@ -147,7 +149,7 @@ export default function Portfolio() {
       description: "Sitio web elegante para pastelería con reservas online",
       longDescription:
         "Sitio web responsive para una pastelería que incluye catálogo de productos, sistema de reservas, galería de imágenes y formulario de contacto. Diseño elegante y moderno.",
-      image: "/image/PasteriaTech.png",
+      image: `${IMG_BASE}PasteriaTech.png`,
       category: "frontend",
       technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
       github: "https://github.com/JesyGomez/Pasteleria-TalentoTech.git",
@@ -161,7 +163,7 @@ export default function Portfolio() {
       description: "Plataforma colaborativa para adopción de mascotas",
       longDescription:
         "Proyecto colaborativo desarrollado con Flask y Python para facilitar la adopción de mascotas. Incluye perfiles de mascotas, sistema de adopción y panel administrativo.",
-      image: "/image/AdopMascotas.png",
+      image: `${IMG_BASE}AdopMascotas.png`,
       category: "fullstack",
       technologies: ["Flask", "Python", "Bootstrap", "MySQL"],
       github: "https://github.com/SabrinaCortez/back-Adopcion-Web.git",
@@ -175,7 +177,7 @@ export default function Portfolio() {
       description: "Portfolio personal en inglés con diseño minimalista",
       longDescription:
         "Portfolio personal desarrollado en inglés con un enfoque minimalista y profesional. Incluye todas mis habilidades y proyectos con un diseño limpio y moderno.",
-      image: "/image/logoportfolioingles.jpg",
+      image: `${IMG_BASE}logoportfolioingles.jpg`,
       category: "frontend",
       technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
       github: "https://github.com/JesyGomez/Portfolio-in-English",

@@ -47,7 +47,7 @@ export default function About() {
         >
           <div className="relative w-72 h-72 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-xl dark:shadow-2xl">
             {/* Si tienes una imagen real, reemplaza este src */}
-            <img src="/image/LogoInicial.png" alt="Jesica trabajando" className="w-full h-full object-cover" />
+            <img src={`${import.meta.env.BASE_URL}image/LogoInicial.png`} alt="Jesica trabajando" className="w-full h-full object-cover" />
             {/* Marco decorativo */}
             <div className="absolute inset-0 border-4 border-purple-500 dark:border-pink-500 rounded-full transform translate-x-4 translate-y-4 -z-10" />
           </div>

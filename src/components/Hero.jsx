@@ -27,7 +27,7 @@ export default function Hero() {
           transition={{ duration: 1, ease: "easeOut" }}
         >
           <div className="hero-image-wrapper">
-            <img src="/image/fotoperfil.png" alt="Jesica Gomez" className="hero-image" />
+            <img src={`${import.meta.env.BASE_URL}image/fotoperfil.png`} alt="Jesica Gomez" className="hero-image" />
             <div className="image-glow" />
           </div>
         </motion.div>
@@ -88,7 +88,7 @@ export default function Hero() {
           </a>
           {/* Botón para descargar el CV */}
           <a
-            href="/image/Cv_Jesica_Gomez.pdf"
+            href={`${import.meta.env.BASE_URL}image/Cv_Jesica_Gomez.pdf`}
             download="CV_Jesica_Gomez.pdf" // Nombre del archivo cuando se descargue
             className="cta-button secondary"
           >
