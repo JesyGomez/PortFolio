@@ -6,7 +6,7 @@
 
 Bienvenidos a mi portfolio personal, una plataforma para mostrar mis habilidades, proyectos y experiencia en el desarrollo Full Stack. Diseñado para ser moderno, responsivo y fácil de navegar, este sitio es una ventana a mi trabajo y una forma sencilla de contactarme.
 
-**Puedes ver la demo en vivo aquí:** [https://jesicagomezdesarrolladora.netlify.app](https://[jesicagomezdesarrolladora].netlify.app)
+**Puedes ver la demo en vivo aquí:** [https://jesicagomezdesarrolladora.netlify.app](https://jesicagomezdesarrolladora.netlify.app)
 
 
 ## ✨ Características Principales
@@ -45,8 +45,8 @@ Asegúrate de tener instalado lo siguiente:
 
 1.  **Clona el repositorio:**
     ```bash
-    git clone [https://github.com/JesyGomez/PortFolio.git](https://github.com/JesyGomez/PortFolio.git)
-    cd tu-repositorio
+    git clone https://github.com/JesyGomez/PortFolio.git
+    cd PortFolio
     ```
 2.  **Instala las dependencias:**
     ```bash
