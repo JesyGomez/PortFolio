@@ -89,7 +89,7 @@ export default function Hero() {
           {/* Botón para descargar el CV */}
           <a
             href={`${import.meta.env.BASE_URL}image/Cv_Jesica_Gomez.pdf`}
-            download="CV_Jesica_Gomez.pdf" // Nombre del archivo cuando se descargue
+            download="Cv_Jesica_Gomez.pdf" // Nombre del archivo cuando se descargue
             className="cta-button secondary"
           >
             <span>Descargar CV</span>
